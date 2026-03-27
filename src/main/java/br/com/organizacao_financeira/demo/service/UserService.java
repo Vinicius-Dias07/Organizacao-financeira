@@ -34,6 +34,8 @@ public class UserService {
             User userUpdate = oldUser.get();
             userUpdate.setEmail(user.getEmail());
             userUpdate.setName(user.getName());
+            userUpdate.setPassword(user.getPassword());
+            userUpdate.setMonthlyIncome(user.getMonthlyIncome());
 
             repository.save(userUpdate);
             return userUpdate;
